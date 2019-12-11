@@ -14,9 +14,9 @@ let result = (Math.floor(Math.random() * 10)) % 3;
 
 
 // first, takes current scores for each player and assigns them
-//next, runs if statement for possible combinations of choices
-//once if triggers, assigns resultsText and increments score var
-//finishes by adding in new resultsText and scores to html
+// next, runs if statement for possible combinations of choices
+// once if triggers, assigns resultsText and increments score var
+// finishes by adding in new resultsText and scores to html
 function playRound(playerSelection, computerSelection) {
     let cScore = document.getElementById("computerScore").innerHTML;
     let pScore = document.getElementById("playerScore").innerHTML;
@@ -49,6 +49,8 @@ function playRound(playerSelection, computerSelection) {
     document.getElementById("playerScore").innerHTML = pScore;
 }
 
+
+// creates listeners for mouse over/out to change size of icon
 let rockIcon = document.getElementById("rock");
 let paperIcon = document.getElementById("paper");
 let scissorsIcon = document.getElementById("scissors");
@@ -76,3 +78,11 @@ scissorsIcon.addEventListener("mouseover", function() {
 scissorsIcon.addEventListener("mouseout", function() {
     scissorsIcon.classList.remove('mouseOver');
 })
+
+
+function resetScores() {
+    let resetButton = document.getElementById("resetText");
+    document.getElementById("computerScore").innerHTML = 0;
+    document.getElementById("playerScore").innerHTML = 0;
+    document.getElementById("roundResults").innerHTML = "Lets play another round!";
+}

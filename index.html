@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class = "reset">
-            <div class ="resetText">RESET SCORES</div> 
+            <div id ="resetText" onclick = "resetScores()">RESET SCORES</div> 
         </div> 
         <div class = "players">
                 <div class = "playersText">PLAYER SCORE</div>
@@ -19,7 +19,7 @@
                 <div id = "playerScore">0</div>
                 <div id = "computerScore">0</div>
         </div>
-        <div id = "roundResults">LET'S PLAY! MAKE A SELECTION!</div>
+        <div id = "roundResults">Let's play! Make a selection!</div>
         <div class = "choices">
             <div class = "choice" id = "rock" onclick ="playRound(this.id, computerPlay())">
                 <img src="images/rock.png" alt="Rock">
