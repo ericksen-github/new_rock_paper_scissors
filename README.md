@@ -1,3 +1,3 @@
 Built using Javascript, CSS and HTML.
 
-Project from the Odin Project curriculum - https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project
+Project from the Odin Project curriculum - https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
